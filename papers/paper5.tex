@@ -1,0 +1,15 @@
+\section{Paper 5}
+    %Begin Table formatting
+    \begin{center}
+    \begin{tabular}{ | m{5em} | m{25em} |} 
+      \hline
+      Author(s) Name & Romain Laborde;Arnaud Oglaza;Samer Wazan;François Barrere;Abdelmalek Benzekri;David W. Chadwick;Rémi Venant \\ 
+      \hline
+      Paper Name & A User-Centric Identity Management Framework based on the W3C Verifiable Credentials and the FIDO Universal Authentication Framework \\ 
+      \hline
+      Publication Year & 2020 \\ 
+      \hline
+    \end{tabular}
+    \end{center}
+    %End Table formatting
+    In \cite{9045440}, SAMLv2 is typically used for identity federations between organizations where users are employees of the IdP. This gives the IdP organisation complete control over the attributes disclosed to the SP. it requires strong trust relations between the IdPs and the SPs, who sign agreements in order to join the federation. OIDC fits more with the concept of user-centric federated identity management on the web because (theoretically) users can choose which attributes will be revealed to the SPs. In practice, however, users are given a `take it or leave it' menu by the IdP and have to agree to the release of all of the attributes that the SP requests. Usually, the SP retrieves the user's attributes directly from the IdP via a backchannel, allowing the IdP to track users. Finally, there exist proprietary protocols that are interoperable with OIDC (e.g. Facebook Connect, Google+ sign in, etc.). W3C is only standardizing the data model for VCs and no protocols are proposed. 

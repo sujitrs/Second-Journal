@@ -1,0 +1,15 @@
+\section{Paper 6}
+    %Begin Table formatting
+    \begin{center}
+    \begin{tabular}{ | m{5em} | m{25em} |} 
+      \hline
+      Author(s) Name & Jan Camenisch;Anja Lehmann;Gregory Neven \\ 
+      \hline
+      Paper Name & Electronic Identities Need Private Credentials \\ 
+      \hline
+      Publication Year & 2012 \\ 
+      \hline
+    \end{tabular}
+    \end{center}
+    %End Table formatting
+    In \cite{6142524}, it explains, the way X.509 credentials are constructed forces the user to reveal all of the attributes in the certificate when transferring an attribute. Moreover, the user's public key acts as a unique identifier that follows the user across all of his or her online transactions.  In online solutions, the user first authenticates directly to the issuer. The issuer then creates a verifiable token for the specific set of attributes required by the relying party. Popular examples following this approach include \ac{SAML} and WS-Federation, as well as the more lightweight OpenID. The advantage of this approach is that only the required attributes are revealed. However, the issuer learns which user authenticates to which relying party at which time. Although some protocols can optionally hide the user¿s identity from the relying party and hide the relying party¿s identity from the issuer, this doesn't help when relying parties and issuers compare their transaction

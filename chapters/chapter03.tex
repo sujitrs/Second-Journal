@@ -1,0 +1,40 @@
+%\section{Need for the Study}
+
+Defining APIs (Application Programming Interfaces) for the standardization of Self-Sovereign Identity (SSI) is a complex and evolving process that involves various components and functionalities. While the exact APIs to be defined may vary based on specific use cases and implementations, here are some key APIs that are typically considered for SSI standardization:
+
+Decentralized Identifier (DID) API:
+Create DID: An API for generating and registering decentralized identifiers.
+Resolve DID: An API to retrieve the associated DID document for a given DID.
+Update DID Document: Allows updating the DID document with new information, such as public keys or service endpoints.
+Verifiable Credential API:
+Issue Credential: An API for issuing verifiable credentials to a subject (user) by an issuer.
+Present Proof: Enables a holder to present a verifiable credential to a verifier for verification.
+Verify Credential: Validates the authenticity and integrity of a received verifiable credential.
+Verifiable Presentation API:
+Create Presentation: An API to create a verifiable presentation containing one or more verifiable credentials.
+Verify Presentation: Validates the integrity and authenticity of a verifiable presentation.
+Key Management API:
+Generate Key Pair: Generates a new public-private key pair for use in cryptographic operations.
+Sign Data: Signs data using a private key associated with a DID.
+Verify Signature: Validates the signature of a piece of data using the associated public key.
+Credential Schema and Definition API:
+Define Credential Schema: Allows issuers to define the structure of verifiable credentials.
+Define Credential Definition: Creates a credential definition for a given schema, specifying attributes and rules.
+Revocation API:
+Revoke Credential: An API for revoking a previously issued verifiable credential.
+Check Revocation Status: Verifies whether a credential has been revoked.
+Selective Disclosure API:
+Request Presentation: A verifier initiates a request for specific attributes from a holder's credentials.
+Prepare Presentation: A holder prepares a presentation containing only the requested attributes.
+Identity Hub and Wallet API:
+Manage Wallet: Allows users to manage their digital identity artifacts, such as DIDs, credentials, and keys.
+Connect to Identity Hub: Enables synchronization and backup of identity data to a user's chosen Identity Hub.
+Consent and Authorization API:
+Obtain Consent: Obtains user consent before sharing specific verifiable credentials or attributes.
+Authorize Request: Allows a holder to authorize a verifier's request for data sharing.
+Interop and Network Governance API:
+Discover Services: Allows participants to discover services and endpoints within the SSI ecosystem.
+Governance and Trust: Interfaces for managing governance and trust within decentralized identity networks.
+It's important to note that the SSI ecosystem is still evolving, and the specific APIs required for standardization may expand or evolve over time. Collaborative efforts within organizations like the Decentralized Identity Foundation (DIF), World Wide Web Consortium (W3C), and other standardization bodies are actively working on defining these APIs to ensure interoperability and seamless integration across different SSI implementations and platforms.
+\par Self Sovereign Identity has been supported by various different emerging standards that include W3C VC, W3C DID, and others. But implementation and inter-operability have been left open ended, hence its important to study existing standards and conclude whether with given standards and format a solution / implementation is available that can be used or there is need to enhance existing work that has happened.
+\par Most of the implementation rely on blockchain implementation but because of disadvantages of blockchain - inability to scale its practical implementation remains questionable hence need to study whether there is any alternative to blockchain or there is any solution to the problems of inability to scale.

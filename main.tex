@@ -1,0 +1,89 @@
+\documentclass[12pt]{report}
+%\documentclass[a4paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} %Times new roman font
+%Import the natbib package and sets a bibliography style
+%\usepackage[square,numbers]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[english]{babel}
+\usepackage[nottoc]{tocbibind}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{tikz} %For Border
+\usetikzlibrary{calc} %For Border
+\usepackage{fancyhdr} %For header and footer
+\usepackage{lastpage} %For header and footer
+\usepackage{geometry} %For Margins
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=38.1mm, % 1.5 inches
+ top=25.4mm, , % 1 inches
+ right=25.4mm, % 1 inches
+ bottom=25.4mm % 1 inches
+ }
+% clickable links in the PDF
+\usepackage[colorlinks=true,linkcolor=black, citecolor=blue]{hyperref}
+% acronyms
+\usepackage{acronym} 
+
+\usepackage{minted} %For code listing%
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\graphicspath{ {images/} }
+
+%\frontmatter
+\begin{document}
+%\import{./}{title1.tex}
+%\import{./}{title2.tex}
+%\makeindex
+
+%\tableofcontents
+%\listoflistings
+%\mainmatter
+%%% For header and Footer
+%\pagestyle{fancy}
+%\fancyhf{}
+%\renewcommand{\headrulewidth}{2pt}
+%\renewcommand{\footrulewidth}{1pt}
+%\rhead{Open API Based Protocol for implementing SSI Network}
+%\lhead{Thesis Summary}
+%\lfoot{Information Technology\hspace{3cm} Page \thepage \hspace{1pt} of \pageref{LastPage}}
+%\rfoot{JJTU}
+
+
+%%% %%% For header and Footer
+%\begin{document}
+
+%\listoffigures
+\clearpage
+%\lstlistoflistings
+\clearpage
+
+%\input{acro_list}
+%\listoftables
+%\chapter{Introduction}
+\input{chapters/introduction}
+\chapter{Decentralization and Interoperability}
+\input{chapters/chapter01}
+\chapter{Standardisation}
+\input{chapters/chapter02}
+\chapter{APIs for standardization}
+\input{chapters/chapter03}
+
+%\chapter{Results and discussion}
+%\input{chapters/chapter05}
+
+%Sets the bibliography style to UNSRT and imports the 
+%bibliography file "sample.bib". abbrv acm alpha apalike plain siam unsrt
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{alpha}
+%\bibliography{name}
+%\chapter{References}
+\input{chapters/chapter11}
+
+
+
+
+\end{document}

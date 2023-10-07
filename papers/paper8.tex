@@ -1,0 +1,23 @@
+\section{Paper 8}
+    %Begin Table formatting
+    \begin{center}
+    \begin{tabular}{ | m{5em} | m{25em} |} 
+      \hline
+      Author(s) Name &  Harry Halpin\\ 
+      \hline
+      Paper Name &  Nym Credentials: Privacy-Preserving Decentralized Identity with Blockchains\\ 
+      \hline
+      Publication Year &  2020\\ 
+      \hline
+    \end{tabular}
+    \end{center}
+    %End Table formatting
+    In \cite{9150191}, it has explained how W3C Decentralized Identities and W3C Verificable Credentials suffers privacy issues. It also compares oAuth Token Protocol for not having well defined privacy properties. A malicious \ac{IdP} can impersonate a user that wants to use another \ac{IdP} in IDP-mix attack as no "user signature" is used in oAuth. Mixed \ac{IdP} can be prevented by adding additional attribute to token. The fundamental issue of enabling privacy requires advanced cryptography such as ring signature. It proposes to use blockchain based identity. Identity is provisioned using decentralisation method.
+    \par Certain weaknesses of \ac{W3C} \ac{DIDs} has been highlighted that include, a) The resolution of \ac{DIDs} Document from \ac{DIDs} is not specified. b) Although \ac{DIDs} claims to support "Zero Knowledge Proof" or anonymous authentication credentials, there is no advanced cryptography used outside of RSA and Elliptic Curve ED 25519 Signature.
+    W3C Verifiable credentials comprises of a JSON document where assertions are signed.
+    \par To support \ac{AAC}, Blind signatures can be used that provides selective disclosure of credentials based on RSA or Deffie Hellman but it requires centralised provider of credentials and are not publicly verifiable hence not usable in decentralised system. With \ac{ZKP} for selective disclosure of creadentials has led to attribute based credentials systems such as UProce (Microsft), Idemix (IBM). But these schemes are computationally intensive and centralised. Attribute based credential systems have had very low deployments in comparison to centralised oAuth style systems such as facebookconnect.
+    \par NYM credentials are publicly verifiable and decentralised that allows implementation of oAuth based flow for authorisation and cryptographic authentication to preserve privacy.
+    \par It has explained Coconut algorithm that is used for maintaining privacy for fixed number of attributes. It provides fixed number of elliptic curve points in each credential so that each attribute in coconut has its own key. As each attribute will have key and validators will be required to replicate all these keys, use of coconut signature becomes difficult and practically impossible to manage and maintain.
+    \par NYM Tokens that are a simple fungible token (ERC-20 Compatible) and are used to be indexed to number of credentials and also resources available to services used in NYM Network. This helps in large scale service provider that requires NYM tokens and can be provisioned without overrun with Sybils or without compensation. The NYM token can count number of usage per epoch of a service provider and so may be used to reward the service provider as well as to prevent Sybil attacks. 
+    \par Future work can include NYM framework should evolve overtime to allow new validators and allow permissionless joining and removal of validators.
+    

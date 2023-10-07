@@ -1,0 +1,16 @@
+\section{Paper 11}
+    %Begin Table formatting
+    \begin{center}
+    \begin{tabular}{ | m{5em} | m{25em} |} 
+      \hline
+      Author(s) Name &  Zoltán András Lux;Felix Beierle;Sebastian Zickau;Sebastian Göndör\\ 
+      \hline
+      Paper Name &  Full-text Search for Verifiable Credential Metadata on Distributed Ledgers\\ 
+      \hline
+      Publication Year & 2019\\ 
+      \hline
+    \end{tabular}
+    \end{center}
+    %End Table formatting
+    In \cite{8939249}, it has Self-sovereign Identity (SSI) powered created by using distributed ledger technologies enables more flexible and faster digital identification workflows, while at the same time limiting the control and influence of central authorities. However, a global identity solution must be able to handle different credential types from millions of issuing organizations. As metadata about types of digital credentials is readable by everyone on the public permissioned ledger with Hyperledger Indy, anyone could find relevant and trusted credential types for their use cases by looking at the records on the blockchain. To this date, no efficient full-text search mechanism exists that would allow users to search for credential types in a simple and efficient fashion tightly integrated into their applications. In this work, its proposed a full-text search framework based on the publicly available metadata on the Hyperledger Indy ledger for retrieving matching credential types. The proposed solution is able to find credential types based on textual input from the user by using a full-text search engine and maintaining a local copy of the ledger. Thus, it does not need to rely on information about credentials coming from a very large candidate pool of third parties that needs to be trusted, such as the website of a company displaying its own identifier and a list of issued credentials. We have also proven the feasiblity of the concept by implementing and evaluating a prototype of the full-text credential metadata search service. 
+    \par Full text search on ledger of verifiable registry is enabled by using Solr. Search is done on local database that is synced up with ledger copy for fast search.
